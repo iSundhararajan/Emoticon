@@ -6,6 +6,7 @@
 
 ## ⚙️ How we built it
 
+- Figma: For design
 - React Js: For frontend
 - Coil: For web monetization
 - Firebase: For user authentication
