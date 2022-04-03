@@ -2,10 +2,15 @@
 
 ## 💡 Inspiration
 
+Mental health is a very important aspect of everyone's lives. Many people tend to ignore mental health issues due to a variety of reasons, and this eventually makes the problem worse. This inspired us to create a website, named Emoticon, which will help the user to take care of their mental health. Emoticon is a digital representation of emotions; emotions are related to mental health, which is why this is the perfect name for our website.
+
 ## 💻 What it does
+
+Emoticon allows people to take care of their mental health, by providing numerous features. This website consists of a homepage, signup/signin, therapist help, chatroom, and contact us. Users can browse through and contact professional therapists, via messaging or video call, to talk as well as receive advice and help. They can also head over to the public chatroom, where they can anonymously talk to other users as well as receive help. Moreover, if the user wants to get in touch with Emoticon or have any questions/comments, they can do so via the Contact Us page. The user has access to everything, with a click of a button. 
 
 ## ⚙️ How we built it
 
+- Figma: For design
 - React Js: For frontend
 - Coil: For web monetization
 - Firebase: For user authentication
@@ -25,7 +30,7 @@ We are using Firebase for database and authentication. Cloud Firestore is a flex
 
 ## 🌐 Best Domain Name from Domain.com
 
-- Any domain with .tech on domain.com.
+- Any domain with .tech on domain.com. The domain name we used is helpemoticon.tech.
 
 ## 🧠 Challenges we ran into
 
@@ -37,6 +42,7 @@ We are using Firebase for database and authentication. Cloud Firestore is a flex
 
 - Implementing Coil and DeSo
 - Completing the project in the given time frame.
+- Using minimalistic designing, which makes the website easy to use
 
 ## 📖 What we learned
 
@@ -44,6 +50,5 @@ We are using Firebase for database and authentication. Cloud Firestore is a flex
 - Collaboration with other developers.
 
 ## 🚀 What's next for Emoticon
-
 - Building a mobile app for the project.
-- Adding more features.
+- Adding more features(24/7 helpline,etc.)
