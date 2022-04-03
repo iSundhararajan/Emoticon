@@ -50,6 +50,5 @@ We are using Firebase for database and authentication. Cloud Firestore is a flex
 - Collaboration with other developers.
 
 ## 🚀 What's next for Emoticon
-
 - Building a mobile app for the project.
 - Adding more features(24/7 helpline,etc.)
