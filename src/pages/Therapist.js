@@ -3,8 +3,12 @@ import MiaImg from '../assets/mia.svg'
 import RobertImg from '../assets/robert.svg'
 import AliyahIng from '../assets/aliyah.svg'
 import { Link } from 'react-router-dom'
+import {ReactWebMonetizationMeta} from 'react-webmonetization-meta'
 
 export default function Therapist() {
+
+    const PaymentPointer = '$ilp.uphold.com/B3wYAhcHiUyQ'
+
     return (
         <div className='min-h-screen pb-8'>
             <h1 className='text-5xl p-8'>Ask a Therapist!</h1>
@@ -24,9 +28,15 @@ export default function Therapist() {
 
                             <h1 className="text-gray-800 text-2xl py-2">Background: Mental health is very important to me and I have been therapist for 10 years.I love to listen to your problems and help you!</h1>
 
-                            <Link to="/therapist/mia" className='py-4'>
-                                <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Therapist Help</button>
-                            </Link>
+                            <div className="flex flex-row space-x-2 py-2">
+                                <Link to="/therapist/mia">
+                                    <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Therapist Help</button>
+                                </Link>
+
+                                <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Donate
+                                    <ReactWebMonetizationMeta PaymentPointer={PaymentPointer} />
+                                </button>
+                            </div>
 
                         </div>
                     </div>
@@ -45,9 +55,15 @@ export default function Therapist() {
 
                             <h1 className="text-gray-800 text-2xl py-2">Background: Therapist for 5 years, recently graduated from Emory with a degree in Psychology. Planning to become a medical psychiatrist</h1>
 
-                            <Link to="/therapist/robert" className='py-4'>
-                                <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Therapist Help</button>
-                            </Link>
+                            <div className="flex flex-row space-x-2 py-2">
+                                <Link to="/therapist/robert">
+                                    <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Therapist Help</button>
+                                </Link>
+
+                                <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Donate
+                                    <ReactWebMonetizationMeta PaymentPointer={PaymentPointer} />
+                                </button>
+                            </div>
 
                         </div>
                     </div>
@@ -66,14 +82,19 @@ export default function Therapist() {
 
                             <h1 className="text-gray-800 text-2xl py-2">Background: Medical psychiatrist, with more than 25 years of experience. I have worked with people from all age and ehtnic groups.</h1>
 
-                            <Link to="/therapist/aliyah" className='py-4'>
-                                <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Therapist Help</button>
-                            </Link>
+                            <div className="flex flex-row space-x-2 py-2">
+                                <Link to="/therapist/aliyah">
+                                    <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Therapist Help</button>
+                                </Link>
+
+                                <button className='bg-secondary text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Donate
+                                    <ReactWebMonetizationMeta PaymentPointer={PaymentPointer} />
+                                </button>
+                            </div>
 
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
