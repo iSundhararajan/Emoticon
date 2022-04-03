@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1B2431",
-        secondary: "#FF073A",
+        primary: "#EFB5EB",
+        secondary: "#02193D",
         tertiary: "#02066F",
       },
       zIndex: {
@@ -18,7 +18,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      'montserrat': ['Montserrat']
+      'montserrat': ['Montserrat'],
+      'orienta': ['Orienta', 'sans-serif'],
     }
   },
   variants: {

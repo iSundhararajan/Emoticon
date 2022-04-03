@@ -9,8 +9,8 @@ export default function Navbar() {
 
     return (
         <div >
-            <nav className="flex items-center py-2 flex-wrap px-4 text-fontColor tracking-wider">
-                <Link to="/"><span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">Emoticon
+            <nav className="flex items-center py-2 flex-wrap px-4 text-fontColor tracking-wider bg-secondary">
+                <Link to="/"><span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">Emoticon &#58;&#45;&#41;
                 </span></Link>
                 <button className="lg:hidden right-0 absolute md:px-8 px-6 mr-1 mb-1 ease-linear transition-all duration-150" type="button" onClick={() => setShowNavbar(true)} aria-hidden="false" aria-label="button">
                     <HiOutlineMenuAlt3 className="h-7 w-7" aria-hidden="false" />
@@ -42,15 +42,19 @@ export default function Navbar() {
                                     >
 
                                         <Link to="/">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-tertiary cursor-pointer text-white">Home</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Home</span>
                                         </Link>
 
                                         <Link to="/therapist">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-tertiary cursor-pointer text-white">Therapist</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Therapist Help</span>
                                         </Link>
 
                                         <Link to="/chat">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-tertiary cursor-pointer text-white">Chat</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Chat</span>
+                                        </Link>
+
+                                        <Link to="/contact">
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Contact Us</span>
                                         </Link>
 
                                         <button className='bg-blue-600 text-white py-2 px-8 rounded-md ml-2' onClick={() => auth.signOut()}>
@@ -71,15 +75,19 @@ export default function Navbar() {
                     <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full text-xl lg:items-center items-start flex flex-col lg:h-auto space-x-2 mr-12" >
 
                         <Link to="/">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-tertiary cursor-pointer text-white">Home</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Home</span>
                         </Link>
 
                         <Link to="/therapist">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-tertiary cursor-pointer text-white">Therapist</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Therapist Help</span>
                         </Link>
 
                         <Link to="/chat">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-tertiary cursor-pointer text-white">Chat</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Chatroom</span>
+                        </Link>
+
+                        <Link to="/contact">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-indigo-500 cursor-pointer text-white">Contact Us</span>
                         </Link>
 
                         <button className='bg-[#6F5DE0] text-white py-2 px-8 rounded-md' onClick={() => auth.signOut()}>

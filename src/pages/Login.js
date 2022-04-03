@@ -14,7 +14,7 @@ function LogIn() {
 
             <div className="z-10 mt-16 bg-secondary md:h-96 md:w-96 md:mt-16 md:ml-44 rounded-3xl"></div>
 
-            <div className="z-20 p-4 m-8 origin-bottom-right transform border-4 border-tertiary lg:mx-56 md:mx-8 lg:-mt-80 rounded-2xl bg-blue-800">
+            <div className="z-20 p-4 m-8 origin-bottom-right transform border-4 border-tertiary lg:mx-56 md:mx-8 lg:-mt-80 rounded-2xl bg-pink-500">
                 <div className="p-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2">
 
                     <div className="w-11/12 p-8 rounded-lg lg:-ml-4 sm:ml-16">
@@ -50,7 +50,7 @@ function LogIn() {
                             <div className="inline-flex h-1 mx-4 bg-pink-500 rounded-full w-52"></div>
                         </div>
 
-                        <div className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 cursor-pointer shadow-lg" onClick={signInWithGoogle}>
+                        <div className="w-full block bg-white hover:bg-gray-100  text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 cursor-pointer shadow-lg" onClick={signInWithGoogle}>
                             <div className="flex items-center justify-center bg-white">
                                 <img src={GoogleLogo} alt="google" className="bg-white w-4" />
                                 <span className="bg-white ml-4">Sign in with Google</span>
